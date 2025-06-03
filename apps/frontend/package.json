@@ -2,7 +2,6 @@
   "name": "@alliance/frontend",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build:client": "vite build --outDir dist/client",
+    "build:server": "vite build --ssr src/entry-server.tsx --outDir dist/server"
   },
   "overrides": {
     "react-is": "^19.0.0"
@@ -26,11 +27,8 @@
     "date-fns": "^4.1.0",
     "msw": "^2.8.4",
     "msw-storybook-addon": "^2.0.4",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
     "react-globe.gl": "^2.33.2",
     "react-markdown": "^10.1.0",
-    "react-router-dom": "^7.6.0",
     "recharts": "^2.15.3",
     "storybook": "^8.6.12",
     "tailwind-merge": "^3.3.0",
@@ -47,11 +45,8 @@
     "@storybook/react-vite": "^8.6.12",
     "@storybook/test": "^8.6.12",
     "@types/d3": "^7.4.3",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@types/react-router-dom": "^5.3.3",
     "@types/three": "^0.176.0",
-    "@vitejs/plugin-react": "^4.3.4",
+    "@vitejs/plugin-react": "^4.5.1",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.28.0",
     "eslint-plugin-react": "^7.37.5",
@@ -61,7 +56,6 @@
     "eslint-plugin-unused-imports": "^4.1.4",
     "globals": "^16.2.0",
     "postcss": "^8.5.3",
-    "react-router-dom": "^7.6.1",
     "tailwindcss": "^4.1.4",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.33.0",

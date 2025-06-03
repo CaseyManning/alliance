@@ -7,7 +7,8 @@
     "apps/frontend",
     "apps/admin",
     "apps/mobile",
-    "shared"
+    "shared",
+    "server"
   ],
   "scripts": {
     "frontend:dev": "yarn workspace @alliance/frontend dev",
@@ -21,5 +22,11 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.33.0"
   },
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.1",
+  "dependencies": {
+    "@types/react-dom": "^19.1.5",
+    "react": "^19.1.0",
+    "react-router": "6",
+    "react-router-dom": "^7.6.1"
+  }
 }

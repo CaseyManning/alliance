@@ -20,4 +20,7 @@ export default defineConfig({
       allow: [".."],
     },
   },
+  ssr: {
+    noExternal: ["react-router", "react-router-dom"],
+  },
 });
